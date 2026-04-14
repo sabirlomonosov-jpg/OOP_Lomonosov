@@ -32,7 +32,16 @@ class MainClass
 
         Console.WriteLine();
 
-        
+        Direktor direktor = new Direktor();
+        direktor.Nimi = "Kati";
+        direktor.Aine = "Juhtimine";
+        direktor.BaasPalk = 2000;
+        direktor.Lisatasu = 500;
+
+        direktor.Kirjelda();
+        Console.WriteLine($"Direktori palk: {direktor.ArvutaPalk()}");
+
+
         Console.WriteLine("=== Polümorfism ===");
 
         Isik[] inimesed = { õpetaja, õpilane };
